@@ -9,6 +9,166 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(./pic.jpg) no-repeat center;
+    background: url(./libs/img/bg.jpg) no-repeat center;
  background-size: cover;
 }
+body,
+p,
+h4{
+    padding: 0;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+
+.main{
+    position: absolute;
+    width: 400px;
+    height: 600px;
+    top: 50%;
+    left: 50%;
+    margin: -300px -200px;
+}
+
+.top{
+    width: 100%;
+    height: 30%;
+    background: rgb(125,24,0);
+    position: absolute;
+    color: rgb(125,24,0);
+}
+
+.bottom{
+    position: absolute;
+    width: 100%;
+    height: 82%;
+    top: 18%;
+    background: rgb(125,24,0);
+}
+
+.board{
+    background: rgb(229,151,115);
+    width: 26%;
+    height: 90%;
+    margin: 2% 0 0 2%;
+    float: left;
+}
+.board h4{
+    width: 100%;
+    height: 25%;
+    font-size: 25px;
+    text-align: center;
+}
+
+.board p{
+    width: 100%;
+    height: 75%;
+    font-size: 4.5em;
+    text-align: center;
+}
+
+.mes{
+    background-color: rgb(229,151,115);
+    width: 44%;
+    height: 90%;
+    font-size: 2.5em;
+    float: left;
+    text-align: center;
+    padding-top: 20px;
+    margin: 2% 0 0 0;
+}
+
+.mes div{
+    font-size: 0.75em;
+    color: rgb(125,24,0);
+}
+
+
+.time {
+    margin: 2% 0 0 0;
+}
+
+.box{
+    width: 97%;
+    height: 97%;
+    background:rgb(125,24,0);
+    margin: 0 auto;
+    margin-top: 5px;
+}
+
+.placer{
+    width: 33%;
+    height: 25%;
+    float: left;
+}
+
+.holder{
+    width: 98%;
+    height: 97%;
+    margin: 1.5%;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+    border-radius: 3px;
+}
+
+.flip{
+    transform: rotateY(180deg);
+}
+
+.front{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s ease;
+    z-index: 10;
+    background-color: lightgrey;
+    background-image: url(./libs/img/question_mark.png);
+    background-size: cover;
+
+}
+
+.back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: rotateY(180deg);
+    transition: all 0.5s ease;
+    z-index: 5;
+    backface-visibility: hidden;
+}
+
+.addSc{
+    animation: enable 0.3s linear;
+}
+
+.timeStyle{
+    animation: timer 0.3s linear;
+}
+
+@keyframes enabled{
+    0%{
+        transform: scale(1);
+    }
+    60%{
+        color:rgb(125,24,0);
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+@keyframes timer{
+    0%{
+        transform: scale(1);
+    }
+    60%{
+        color:rgb(125,24,0);
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
