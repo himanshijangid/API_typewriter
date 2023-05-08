@@ -24,10 +24,8 @@ h4{
 
 .main{
     position: relative;
-    width: 40%;
-    height: 80%;
-    
-   
+    width: 20%;
+    height: 90%;
     margin: -300px -200px;
 }
 
@@ -173,4 +171,13 @@ h4{
         transform: scale(1);
     }
 }
-
+@media screen and (min-width: 480px){
+    
+        .main{
+            position: relative;
+            width: 40%;
+            height: 90%;
+            margin: -300px -200px;
+        
+    }
+}
